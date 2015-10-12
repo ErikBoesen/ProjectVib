@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Geomanist';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Geomanist'), url(Geomanist.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlJbPFduIYtoLzwST68uhz_Y.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    color: #333;
+    padding: 3em 5em;
+}
+h1, h2, h3 {
+    font-family: "Geomanist", sans-serif;
+    margin: 0;
+}
+h1 {
+    font-size: 8em;
+}
+h3 {
+    font-size: 3em;
+}
+a {
+    color: #0e6c4a;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+#video-container {
+    position: relative;
+    height: 0;
+    padding-top: 28.1%;
+    width: 50%;
+}
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#twitter {
+    margin-left: 20px;
+}
