@@ -2,15 +2,15 @@
     font-family: 'Geomanist';
     font-style: normal;
     font-weight: 400;
-    src: local('Geomanist'), url(Geomanist.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    src: local('Geomanist'), url(../Geomanist.woff2) format('woff2');
+    unicode-range: U+0020—007F;
 }
 @font-face {
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 400;
-    src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(SourceSans.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(../SourceSans.woff2) format('woff2');
+    unicode-range: U+0020—007F;
 }
 * {
     box-sizing: border-box;
@@ -26,7 +26,7 @@ header {
     background: #00BCD4;
     color: white;
     width: 100%;
-    padding: 1.5em 5em 1em;
+    padding: .3em 5em 1em 5em;
     box-shadow: 0 1px 5px rgba(0, 0, 0, .3);
 }
 h1 {
@@ -37,7 +37,7 @@ h1 {
 nav {
     display: inline-block;
     float: right;
-    margin-top: .8em;
+    margin-top: 1.9em;
     height: 100%;
 }
 nav ul {
@@ -75,7 +75,9 @@ section {
     padding: 1em 5em;
     line-height: 1.5;
 }
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Geomanist', sans-serif;
     margin: 0;
 }
@@ -84,4 +86,108 @@ h3 {
 }
 a {
     color: #00BCD4;
+}
+.twitter {
+    margin: 2em 2em 1em;
+}
+.pledge-button {
+    text-decoration: none;
+    font-size: 2em;
+    font-family: 'Besom', 'Raleway', sans-serif;
+    text-align: center;
+}
+.pledge-button i,
+.pledge-button p {
+    display: inline;
+}
+.pledge-button p {
+    text-decoration: none;
+    border-bottom: solid 1px #aaa;
+    padding: -20px;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+.pledge-button:hover p {
+    border-bottom-color: black;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+#tweets {
+    text-align: left;
+}
+#tweets:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+#tweets li {
+    width: 80%;
+    margin: 0 auto;
+    float: none;
+    list-style-type: none;
+}
+@media (min-width: 48em) {
+    #tweets li {
+        width: 33.33333%;
+        float: left;
+    }
+}
+#tweets a {
+    text-decoration: none;
+}
+#tweets .user {
+    padding: 20px 20px 16px;
+    position: relative;
+}
+#tweets .user a span {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+}
+#tweets .user a img[data-scribe='element:avatar'] {
+    float: left;
+    border-radius: 100%;
+    margin-right: 6px;
+    height: 60px;
+}
+#tweets .user a span[data-scribe='element:verified_badge'] {
+    display: none;
+    margin: -100%;
+}
+#tweets .user a span[data-scribe='element:name'] {
+    margin-top: 4px;
+}
+#tweets .user a span[data-scribe='element:screen_name'] {
+    color: grey;
+}
+#tweets .tweet {
+    overflow: hidden;
+    margin: 0;
+    padding: 10px 20px;
+    clear: both;
+}
+#tweets .tweet a[data-scribe='element:url'] {
+    text-decoration: underline;
+}
+#tweets .tweet a[data-scribe='element:hashtag'] {
+    color: grey;
+    text-decoration: none;
+}
+#tweets .tweet img[aria-label^='Emoji'] {
+    max-height: 1em;
+    vertical-align: middle;
+}
+#tweets .timePosted {
+    margin: 0;
+    padding: 0 20px;
+    font-size: .8em;
+    text-align: left;
+    position: relative;
+    bottom: 0;
+}
+#tweets .timePosted:before {
+    font-family: 'Fontawesome';
+    -webkit-font-smoothing: antialiased;
+    content: '';
+    padding-right: 4px;
 }

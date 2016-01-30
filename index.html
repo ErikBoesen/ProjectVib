@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Project Vib: Take the Pledge!</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets/font-awesome.css">
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="stylesheets/index.css">
 </head>
+
 <body>
     <header>
         <h1>Project Vib</h1>
@@ -22,17 +25,19 @@
     <section>
         <p>Smartphones are powerful tools. With the device in our pocket, we can communicate with millions of people, take photos, and access nearly all the information known to man. But since the advent of these devices, people aren't getting closer. If anything, we're getting further apart.</p>
         <p>The average person spends four hours of their life using their smartphones, time that they could be spending with people, or doing more useful things.</p>
-        <p>There are a number of strategies you can use to reduce unnecesary phone use. For instance, you can charge your phone to only 50% every night, or try deleting or hiding apps you waste time on. If you're a minor, ask your parent to keep your phone when you don't need it.</p>
+        <p>There are a number of strategies you can use to reduce unnecesary phone use. For instance, you can charge your phone to only 50% every night (or use it for two days on one charge), or try deleting or hiding apps you waste time on. If you're a minor, ask your parent to keep your phone when you don't need it.</p>
         <div class="row">
             <div id="video-container">
                 <iframe src="https://www.youtube.com/embed/hoQKLOrAU4E" allowfullscreen></iframe>
             </div>
-            <div id="twitter">
-                <h3>Take the #VibPledge!</h3>
-                <a class="twitter-timeline" href="https://twitter.com/hashtag/VibPledge" data-widget-id="653385309997125632">#VibPledge Tweets</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            <div class="twitter">
+                <h3><i class="fa fa-twitter"></i> Take the #VibPledge</h3>
+                </a>
+                <div id="tweets"></div>
             </div>
         </div>
     </section>
+    <script src="scripts.js"></script>
 </body>
+
 </html>
