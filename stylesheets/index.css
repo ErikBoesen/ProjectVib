@@ -1,6 +1,12 @@
 .twitter {
     margin: 2em auto;
 }
+.twitter img {
+    height: 1em;
+    display: inline;
+    margin-bottom: -8px;
+    margin-right: -5px;
+}
 h3 {
     font-size: 3em;
 }
