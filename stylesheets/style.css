@@ -96,6 +96,9 @@ a {
 a:hover {
     text-decoration: none;
 }
+ol li {
+    margin: 10px 0;
+}
 footer {
     background: #ddd;
     color: #aaa;
