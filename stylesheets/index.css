@@ -1,5 +1,6 @@
 .twitter {
     margin: 2em auto;
+    width: 50%;
 }
 .twitter img {
     height: 1em;
@@ -22,7 +23,6 @@ h3 {
 }
 #tweets {
     text-align: left;
-    width: 50%;
 }
 #tweets:after {
     content: '';
