@@ -1,0 +1,29 @@
+{
+  "name": "projectvib",
+  "version": "1.0.0",
+  "description": "A campaign to help people put down their phones and live a little.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErikBoesen/ProjectVib.git"
+  },
+  "keywords": [
+    "phone",
+    "smartphone"
+  ],
+  "author": "ErikBoesen",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/ErikBoesen/ProjectVib/issues"
+  },
+  "homepage": "https://github.com/ErikBoesen/ProjectVib#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jade": "^1.0.0",
+    "sass": "^1.0.0",
+    "browserSync": "^1.0.0"
+  }
+}
