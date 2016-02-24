@@ -7,10 +7,10 @@
   unicode-range: U+0020—007F; }
 
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  src: local("Source Sans Pro"), local("SourceSansPro-Regular"), url(../fonts/SourceSans.woff2) format("woff2");
+  src: local("Open Sans"), local("OpenSans"), url(../fonts/OpenSans.woff2) format("woff2");
   unicode-range: U+0020—007F; }
 
 * {
@@ -20,7 +20,7 @@
   height: auto; }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #333; }

@@ -2,7 +2,6 @@ var gulp = require('gulp'),
 	gutil = require('gulp-util'),
 	jade = require('gulp-jade'),
 	sass = require('gulp-sass'),
-    concat = require('gulp-concat'),
 	autoprefixer = require('gulp-autoprefixer'),
 	browserSync = require('browser-sync').create();
 
@@ -11,7 +10,10 @@ gulp.task('default', ['watch']);
 gulp.task('build-html', function() {
 	return gulp.src('source/**/*.jade')
 		.pipe(jade())
-		.pipe(gulp.dest('dist')); // tell gulp our output folder
+		.pipe(gulp.dest('dist'))
+		.pipe(browserSync.reload({
+			stream: true
+		}));
 });
 
 gulp.task('build-css', function() {
@@ -29,8 +31,7 @@ gulp.task('build-css', function() {
 
 gulp.task('build-js', function() {
 	return gulp.src('source/javascript/**/*.js')
-		.pipe(concat('scripts.js'))
-		.pipe(gulp.dest('dist/javascript/'));
+		.pipe(gulp.dest('dist/javascript'));
 });
 
 gulp.task('fonts', function() {
@@ -40,7 +41,10 @@ gulp.task('fonts', function() {
 
 gulp.task('images', function() {
 	return gulp.src('source/images/**/*')
-		.pipe(gulp.dest('dist/images'));
+		.pipe(gulp.dest('dist/images'))
+		.pipe(browserSync.reload({
+			stream: true
+		}));
 });
 
 gulp.task('browserSync', function() {
